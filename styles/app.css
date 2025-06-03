@@ -13,10 +13,9 @@ html {
     padding: 0 48px;
 }
 
-/* Header fijo en la izquierda */
 header {
     flex: 1;
-    position: sticky; /* Se queda fijo al hacer scroll vertical */
+    position: sticky;
     top: 0;
     height: 100vh;
     background-color: red;
@@ -27,4 +26,31 @@ main {
     flex: 1;
     padding: 96px 0;
     background-color: rebeccapurple;
+}
+
+.titulos {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+  ul {
+    display: none;
+  }
+
+  .titulos {
+    display: block;
+  }
+
+  header {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    flex: none;
+  }
+
+  .container {
+    display: block;
+    padding: 64px 48px;
+  }
 }
