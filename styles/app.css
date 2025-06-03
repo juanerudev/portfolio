@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    padding: 0 48px;
+}
+
+/* Header fijo en la izquierda */
+header {
+    flex: 1;
+    position: sticky; /* Se queda fijo al hacer scroll vertical */
+    top: 0;
+    height: 100vh;
+    background-color: red;
+    padding: 96px 0;
+}
+
+main {
+    flex: 1;
+    padding: 96px 0;
+    background-color: rebeccapurple;
+}
